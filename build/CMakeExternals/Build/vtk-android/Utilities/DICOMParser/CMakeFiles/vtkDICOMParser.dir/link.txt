@@ -1,0 +1,2 @@
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ar cr ../../lib/libvtkDICOMParser-6.0.a  CMakeFiles/vtkDICOMParser.dir/DICOMFile.cxx.o CMakeFiles/vtkDICOMParser.dir/DICOMParser.cxx.o CMakeFiles/vtkDICOMParser.dir/DICOMAppHelper.cxx.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ranlib ../../lib/libvtkDICOMParser-6.0.a

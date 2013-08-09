@@ -1,0 +1,2 @@
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ar cr ../../lib/libflann_s.a  CMakeFiles/flann_s.dir/flann/flann.cpp.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ranlib ../../lib/libflann_s.a

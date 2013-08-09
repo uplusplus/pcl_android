@@ -1,0 +1,30 @@
+# Target labels
+ vtkParallelCore
+# Source files and their labels
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkCommunicator.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkDummyCommunicator.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkDummyController.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkMultiProcessController.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkMultiProcessStream.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkProcess.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkProcessGroup.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkSocketCommunicator.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkSocketController.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkSubCommunicator.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkSubGroup.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkFieldDataSerializer.cxx
+/work/project/pcl-android/build/CMakeExternals/Build/vtk-android/Parallel/Core/vtkSocketCommunicatorHash.h
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkCommunicator.h
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkDummyCommunicator.h
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkDummyController.h
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkMultiProcessController.h
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkMultiProcessStream.h
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkProcess.h
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkProcessGroup.h
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkSocketCommunicator.h
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkSocketController.h
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkSubCommunicator.h
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkSubGroup.h
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Parallel/Core/vtkFieldDataSerializer.h
+/work/project/pcl-android/build/CMakeExternals/Build/vtk-android/Parallel/Core/vtkParallelCoreModule.h
+/work/project/pcl-android/build/CMakeExternals/Build/vtk-android/Parallel/Core/vtkSocketCommunicatorHash.h.rule

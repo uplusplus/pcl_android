@@ -1,0 +1,12 @@
+/work/project/pcl-android/build/CMakeFiles/boost-android.dir
+/work/project/pcl-android/build/CMakeFiles/boost-fetch.dir
+/work/project/pcl-android/build/CMakeFiles/eigen.dir
+/work/project/pcl-android/build/CMakeFiles/flann-android.dir
+/work/project/pcl-android/build/CMakeFiles/flann-fetch.dir
+/work/project/pcl-android/build/CMakeFiles/pcl-android.dir
+/work/project/pcl-android/build/CMakeFiles/pcl-fetch.dir
+/work/project/pcl-android/build/CMakeFiles/ves-android.dir
+/work/project/pcl-android/build/CMakeFiles/ves-fetch.dir
+/work/project/pcl-android/build/CMakeFiles/vtk-android.dir
+/work/project/pcl-android/build/CMakeFiles/vtk-fetch.dir
+/work/project/pcl-android/build/CMakeFiles/vtk-host.dir

@@ -1,0 +1,6 @@
+# Target labels
+ vtkDICOMParser
+# Source files and their labels
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Utilities/DICOMParser/DICOMFile.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Utilities/DICOMParser/DICOMParser.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Utilities/DICOMParser/DICOMAppHelper.cxx

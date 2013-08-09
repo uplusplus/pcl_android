@@ -1,0 +1,2 @@
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ar cr ../../lib/libvtkIOXMLParser-6.0.a  CMakeFiles/vtkIOXMLParser.dir/vtkXMLDataParser.cxx.o CMakeFiles/vtkIOXMLParser.dir/vtkXMLParser.cxx.o CMakeFiles/vtkIOXMLParser.dir/vtkXMLUtilities.cxx.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ranlib ../../lib/libvtkIOXMLParser-6.0.a

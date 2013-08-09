@@ -1,0 +1,2 @@
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ar cr ../lib/libpcl_io.a  CMakeFiles/pcl_io.dir/src/pcd_grabber.cpp.o CMakeFiles/pcl_io.dir/src/pcd_io.cpp.o CMakeFiles/pcl_io.dir/src/vtk_io.cpp.o CMakeFiles/pcl_io.dir/src/ply_io.cpp.o CMakeFiles/pcl_io.dir/src/compression.cpp.o CMakeFiles/pcl_io.dir/src/lzf.cpp.o CMakeFiles/pcl_io.dir/src/obj_io.cpp.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ranlib ../lib/libpcl_io.a

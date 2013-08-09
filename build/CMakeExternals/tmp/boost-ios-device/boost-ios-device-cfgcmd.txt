@@ -1,0 +1,1 @@
+cmd='/usr/bin/cmake;-DCMAKE_INSTALL_PREFIX:PATH=/work/project/pcl-android/build/CMakeExternals/Install/boost-ios-device;-DCMAKE_BUILD_TYPE:STRING=Release;-DCMAKE_TOOLCHAIN_FILE:FILEPATH=/work/project/pcl-android/pcl-superbuild/toolchains/toolchain-ios-device.cmake;-DBUILD_SHARED_LIBS:BOOL=OFF;-GUnix Makefiles;/work/project/pcl-android/build/CMakeExternals/Source/boost'

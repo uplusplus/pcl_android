@@ -1,0 +1,2 @@
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ar cr ../lib/libpcl_search.a  CMakeFiles/pcl_search.dir/src/kdtree.cpp.o CMakeFiles/pcl_search.dir/src/brute_force.cpp.o CMakeFiles/pcl_search.dir/src/organized.cpp.o CMakeFiles/pcl_search.dir/src/octree.cpp.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ranlib ../lib/libpcl_search.a

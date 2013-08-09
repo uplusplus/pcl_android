@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/work/project/pcl-android/build/CMakeExternals/Build/vtk-android/CMakeTmp/TestExplicitInstantiation/A.cxx
+A.h
+/work/project/pcl-android/build/CMakeExternals/Build/vtk-android/CMakeTmp/TestExplicitInstantiation/A.h
+
+/work/project/pcl-android/build/CMakeExternals/Build/vtk-android/CMakeTmp/TestExplicitInstantiation/A.h
+

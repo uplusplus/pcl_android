@@ -1,0 +1,2 @@
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ar cr ../lib/libpcl_ml.a  CMakeFiles/pcl_ml.dir/src/point_xy_32i.cpp.o CMakeFiles/pcl_ml.dir/src/point_xy_32f.cpp.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ranlib ../lib/libpcl_ml.a

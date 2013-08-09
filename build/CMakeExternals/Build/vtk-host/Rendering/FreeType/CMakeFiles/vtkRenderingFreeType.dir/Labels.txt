@@ -1,0 +1,22 @@
+# Target labels
+ vtkRenderingFreeType
+# Source files and their labels
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Rendering/FreeType/vtkFreeTypeStringToImage.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Rendering/FreeType/vtkFreeTypeTools.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Rendering/FreeType/vtkVectorText.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Rendering/FreeType/fonts/face_arial_bold.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Rendering/FreeType/fonts/face_arial_bold_italic.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Rendering/FreeType/fonts/face_arial.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Rendering/FreeType/fonts/face_arial_italic.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Rendering/FreeType/fonts/face_courier_bold.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Rendering/FreeType/fonts/face_courier_bold_italic.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Rendering/FreeType/fonts/face_courier.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Rendering/FreeType/fonts/face_courier_italic.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Rendering/FreeType/fonts/face_times_bold.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Rendering/FreeType/fonts/face_times_bold_italic.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Rendering/FreeType/fonts/face_times.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Rendering/FreeType/fonts/face_times_italic.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Rendering/FreeType/vtkFreeTypeStringToImage.h
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Rendering/FreeType/vtkFreeTypeTools.h
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Rendering/FreeType/vtkVectorText.h
+/work/project/pcl-android/build/CMakeExternals/Build/vtk-host/Rendering/FreeType/vtkRenderingFreeTypeModule.h

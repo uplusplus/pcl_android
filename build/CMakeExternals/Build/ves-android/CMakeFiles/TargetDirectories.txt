@@ -1,0 +1,3 @@
+/work/project/pcl-android/build/CMakeExternals/Build/ves-android/src/kiwi/CMakeFiles/kiwi.dir
+/work/project/pcl-android/build/CMakeExternals/Build/ves-android/src/ves/CMakeFiles/ves.dir
+/work/project/pcl-android/build/CMakeExternals/Build/ves-android/src/shaders/CMakeFiles/vesShaders.dir

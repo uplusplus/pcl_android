@@ -1,0 +1,665 @@
+Performing C++ SOURCE FILE Test HAVE_MM_MALLOC failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++   -DANDROID -fexceptions -frtti -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack  -Wall -Wextra -Wabi -Wno-unknown-pragmas -Wconversion -Wold-style-cast -fno-strict-aliasing -Wno-format-extra-args -Wno-sign-compare  -DHAVE_MM_MALLOC -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.cxx
+/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.cxx:2:33: fatal error: mm_malloc.h: No such file or directory
+compilation terminated.
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec/fast] Error 2
+
+Return value: 1
+Source file was:
+
+          #include <mm_malloc.h>
+          int main()
+          {
+            void* mem = _mm_malloc (100, 16);
+            return 0;
+          }
+Performing C++ SOURCE FILE Test HAVE_POSIX_MEMALIGN failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++   -DANDROID -fexceptions -frtti -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack  -Wall -Wextra -Wabi -Wno-unknown-pragmas -Wconversion -Wold-style-cast -fno-strict-aliasing -Wno-format-extra-args -Wno-sign-compare  -DHAVE_POSIX_MEMALIGN -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.cxx
+/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.cxx: In function 'int main()':
+/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.cxx:6:49: error: 'posix_memalign' was not declared in this scope
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
+make[3]: *** [cmTryCompileExec/fast] Error 2
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+
+          #include <stdlib.h>
+          int main()
+          {
+            void* mem;
+            return posix_memalign (&mem, 16, 100);
+          }
+Performing C++ SOURCE FILE Test HAVE_SSE4_1_EXTENSIONS failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++   -DANDROID -fexceptions -frtti -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack  -Wall -Wextra -Wabi -Wno-unknown-pragmas -Wconversion -Wold-style-cast -fno-strict-aliasing -Wno-format-extra-args -Wno-sign-compare  -DHAVE_SSE4_1_EXTENSIONS -msse4.1 -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.cxx
+arm-linux-androideabi-g++: error: unrecognized command line option '-msse4.1'
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec/fast] Error 2
+
+Return value: 1
+Source file was:
+
+          #include <smmintrin.h>
+          int main()
+          {
+            __m128 a, b;
+            float vals[4] = {1, 2, 3, 4};
+            const int mask = 123;
+            a = _mm_loadu_ps(vals);
+            b = a;
+            b = _mm_dp_ps (a, a, mask);
+            _mm_storeu_ps(vals,b);
+            return 0;
+          }
+Performing C++ SOURCE FILE Test HAVE_SSE3_EXTENSIONS failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++   -DANDROID -fexceptions -frtti -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack  -Wall -Wextra -Wabi -Wno-unknown-pragmas -Wconversion -Wold-style-cast -fno-strict-aliasing -Wno-format-extra-args -Wno-sign-compare  -DHAVE_SSE3_EXTENSIONS -msse3 -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.cxx
+arm-linux-androideabi-g++: error: unrecognized command line option '-msse3'
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec/fast] Error 2
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+
+          #include <pmmintrin.h>
+          int main()
+          {
+              __m128d a, b;
+              double vals[2] = {0};
+              a = _mm_loadu_pd(vals);
+              b = _mm_hadd_pd(a,a);
+              _mm_storeu_pd(vals, b);
+              return 0;
+          }
+Performing C++ SOURCE FILE Test HAVE_SSE2_EXTENSIONS failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++   -DANDROID -fexceptions -frtti -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack  -Wall -Wextra -Wabi -Wno-unknown-pragmas -Wconversion -Wold-style-cast -fno-strict-aliasing -Wno-format-extra-args -Wno-sign-compare  -DHAVE_SSE2_EXTENSIONS -msse2 -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.cxx
+arm-linux-androideabi-g++: error: unrecognized command line option '-msse2'
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
+make[3]: *** [cmTryCompileExec/fast] Error 2
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+
+          #include <emmintrin.h>
+          int main()
+          {
+              __m128d a, b;
+              double vals[2] = {0};
+              a = _mm_loadu_pd(vals);
+              b = _mm_add_pd(a,a);
+              _mm_storeu_pd(vals,b);
+              return 0;
+          }
+Performing C++ SOURCE FILE Test HAVE_SSE_EXTENSIONS failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++   -DANDROID -fexceptions -frtti -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack  -Wall -Wextra -Wabi -Wno-unknown-pragmas -Wconversion -Wold-style-cast -fno-strict-aliasing -Wno-format-extra-args -Wno-sign-compare  -DHAVE_SSE_EXTENSIONS -msse -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.cxx
+arm-linux-androideabi-g++: error: unrecognized command line option '-msse'
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec/fast] Error 2
+
+Return value: 1
+Source file was:
+
+          #include <xmmintrin.h>
+          int main()
+          {
+              __m128 a, b;
+              float vals[4] = {0};
+              a = _mm_loadu_ps(vals);
+              b = a;
+              b = _mm_add_ps(a,b);
+              _mm_storeu_ps(vals,b);
+              return 0;
+          }
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/src.c.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  -DANDROID -fexceptions -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack   -DOpenMP_FLAG_DETECTED -fopenmp -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.c.o   -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.c
+/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.c:2:17: fatal error: omp.h: No such file or directory
+compilation terminated.
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.c.o] Error 1
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec/fast] Error 2
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/src.c.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  -DANDROID -fexceptions -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack   -DOpenMP_FLAG_DETECTED /openmp -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.c.o   -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.c
+arm-linux-androideabi-gcc: error: /openmp: No such file or directory
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.c.o] Error 1
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/src.c.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  -DANDROID -fexceptions -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack   -DOpenMP_FLAG_DETECTED -Qopenmp -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.c.o   -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.c
+arm-linux-androideabi-gcc: error: unrecognized command line option '-Qopenmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.c.o] Error 1
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec/fast] Error 2
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/src.c.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  -DANDROID -fexceptions -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack   -DOpenMP_FLAG_DETECTED -openmp -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.c.o   -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.c
+/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.c:2:17: fatal error: omp.h: No such file or directory
+compilation terminated.
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.c.o] Error 1
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/src.c.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  -DANDROID -fexceptions -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack   -DOpenMP_FLAG_DETECTED -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.c.o   -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.c
+/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.c:2:17: fatal error: omp.h: No such file or directory
+compilation terminated.
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.c.o] Error 1
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec/fast] Error 2
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/src.c.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  -DANDROID -fexceptions -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack   -DOpenMP_FLAG_DETECTED -xopenmp -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.c.o   -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.c
+arm-linux-androideabi-gcc: error: language openmp not recognized
+arm-linux-androideabi-gcc: error: language openmp not recognized
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.c.o] Error 1
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec/fast] Error 2
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/src.c.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  -DANDROID -fexceptions -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack   -DOpenMP_FLAG_DETECTED +Oopenmp -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.c.o   -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.c
+arm-linux-androideabi-gcc: error: +Oopenmp: No such file or directory
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.c.o] Error 1
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/src.c.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  -DANDROID -fexceptions -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack   -DOpenMP_FLAG_DETECTED -qsmp -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.c.o   -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.c
+arm-linux-androideabi-gcc: error: unrecognized command line option '-qsmp'
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.c.o] Error 1
+make[3]: *** [cmTryCompileExec/fast] Error 2
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/src.c.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc  -DANDROID -fexceptions -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack   -DOpenMP_FLAG_DETECTED -mp -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.c.o   -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.c
+arm-linux-androideabi-gcc: error: unrecognized command line option '-mp'
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.c.o] Error 1
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++   -DANDROID -fexceptions -frtti -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack  -Wall -Wextra -Wabi -Wno-unknown-pragmas -Wconversion -Wold-style-cast -fno-strict-aliasing -Wno-format-extra-args -Wno-sign-compare  -DOpenMP_FLAG_DETECTED -fopenmp -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.cxx
+/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.cxx:2:17: fatal error: omp.h: No such file or directory
+compilation terminated.
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec/fast] Error 2
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++   -DANDROID -fexceptions -frtti -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack  -Wall -Wextra -Wabi -Wno-unknown-pragmas -Wconversion -Wold-style-cast -fno-strict-aliasing -Wno-format-extra-args -Wno-sign-compare  -DOpenMP_FLAG_DETECTED /openmp -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.cxx
+arm-linux-androideabi-g++: error: /openmp: No such file or directory
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++   -DANDROID -fexceptions -frtti -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack  -Wall -Wextra -Wabi -Wno-unknown-pragmas -Wconversion -Wold-style-cast -fno-strict-aliasing -Wno-format-extra-args -Wno-sign-compare  -DOpenMP_FLAG_DETECTED -Qopenmp -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.cxx
+arm-linux-androideabi-g++: error: unrecognized command line option '-Qopenmp'
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++   -DANDROID -fexceptions -frtti -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack  -Wall -Wextra -Wabi -Wno-unknown-pragmas -Wconversion -Wold-style-cast -fno-strict-aliasing -Wno-format-extra-args -Wno-sign-compare  -DOpenMP_FLAG_DETECTED -openmp -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.cxx
+/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.cxx:2:17: fatal error: omp.h: No such file or directory
+compilation terminated.
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++   -DANDROID -fexceptions -frtti -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack  -Wall -Wextra -Wabi -Wno-unknown-pragmas -Wconversion -Wold-style-cast -fno-strict-aliasing -Wno-format-extra-args -Wno-sign-compare  -DOpenMP_FLAG_DETECTED -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.cxx
+/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.cxx:2:17: fatal error: omp.h: No such file or directory
+compilation terminated.
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec/fast] Error 2
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++   -DANDROID -fexceptions -frtti -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack  -Wall -Wextra -Wabi -Wno-unknown-pragmas -Wconversion -Wold-style-cast -fno-strict-aliasing -Wno-format-extra-args -Wno-sign-compare  -DOpenMP_FLAG_DETECTED -xopenmp -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.cxx
+arm-linux-androideabi-g++: error: language openmp not recognized
+arm-linux-androideabi-g++: error: language openmp not recognized
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
+make[3]: *** [cmTryCompileExec/fast] Error 2
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++   -DANDROID -fexceptions -frtti -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack  -Wall -Wextra -Wabi -Wno-unknown-pragmas -Wconversion -Wold-style-cast -fno-strict-aliasing -Wno-format-extra-args -Wno-sign-compare  -DOpenMP_FLAG_DETECTED +Oopenmp -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.cxx
+arm-linux-androideabi-g++: error: +Oopenmp: No such file or directory
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
+make[3]: *** [cmTryCompileExec/fast] Error 2
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++   -DANDROID -fexceptions -frtti -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack  -Wall -Wextra -Wabi -Wno-unknown-pragmas -Wconversion -Wold-style-cast -fno-strict-aliasing -Wno-format-extra-args -Wno-sign-compare  -DOpenMP_FLAG_DETECTED -qsmp -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.cxx
+arm-linux-androideabi-g++: error: unrecognized command line option '-qsmp'
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec/fast] Error 2
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED failed with the following output:
+Change Dir: /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+make[3]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[4]: Entering directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++   -DANDROID -fexceptions -frtti -Wno-psabi --sysroot=/opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm -fpic -funwind-tables -finline-limit=64 -fsigned-char -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fdata-sections -ffunction-sections -Wa,--noexecstack  -Wall -Wextra -Wabi -Wno-unknown-pragmas -Wconversion -Wold-style-cast -fno-strict-aliasing -Wno-format-extra-args -Wno-sign-compare  -DOpenMP_FLAG_DETECTED -mp -isystem /opt/toolchain/android-ndk-r8e/platforms/android-8/arch-arm/usr/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/include -isystem /opt/toolchain/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi-v7a/include    -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c /work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp/src.cxx
+arm-linux-androideabi-g++: error: unrecognized command line option '-mp'
+make[4]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
+make[4]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+make[3]: *** [cmTryCompileExec/fast] Error 2
+make[3]: Leaving directory `/work/project/pcl-android/build/CMakeExternals/Build/pcl-android/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() { 
+#ifdef _OPENMP
+  return 0; 
+#else
+  breaks_on_purpose
+#endif
+}
+

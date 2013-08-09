@@ -1,0 +1,2 @@
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ar cr ../../lib/libvtkIOPLY-6.0.a  CMakeFiles/vtkIOPLY.dir/vtkPLY.cxx.o CMakeFiles/vtkIOPLY.dir/vtkPLYReader.cxx.o CMakeFiles/vtkIOPLY.dir/vtkPLYWriter.cxx.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ranlib ../../lib/libvtkIOPLY-6.0.a

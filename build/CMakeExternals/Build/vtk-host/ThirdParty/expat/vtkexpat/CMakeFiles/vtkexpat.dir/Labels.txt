@@ -1,0 +1,6 @@
+# Target labels
+ vtkexpat
+# Source files and their labels
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/ThirdParty/expat/vtkexpat/xmlparse.c
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/ThirdParty/expat/vtkexpat/xmltok.c
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/ThirdParty/expat/vtkexpat/xmlrole.c

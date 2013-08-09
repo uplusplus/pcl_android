@@ -1,0 +1,2 @@
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ar cr ../../lib/libvtkCommonMisc-6.0.a  CMakeFiles/vtkCommonMisc.dir/vtkContourValues.cxx.o CMakeFiles/vtkCommonMisc.dir/vtkErrorCode.cxx.o CMakeFiles/vtkCommonMisc.dir/vtkFunctionParser.cxx.o CMakeFiles/vtkCommonMisc.dir/vtkHeap.cxx.o
+/opt/toolchain/android-ndk-r8e/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin/arm-linux-androideabi-ranlib ../../lib/libvtkCommonMisc-6.0.a

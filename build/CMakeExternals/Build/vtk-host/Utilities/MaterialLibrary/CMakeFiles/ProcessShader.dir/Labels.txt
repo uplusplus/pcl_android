@@ -1,0 +1,4 @@
+# Target labels
+ vtkUtilitiesMaterialLibrary
+# Source files and their labels
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/Utilities/MaterialLibrary/ProcessShader.cxx

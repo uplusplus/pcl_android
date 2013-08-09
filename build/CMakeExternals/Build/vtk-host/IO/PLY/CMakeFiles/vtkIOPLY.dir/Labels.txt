@@ -1,0 +1,10 @@
+# Target labels
+ vtkIOPLY
+# Source files and their labels
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/IO/PLY/vtkPLY.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/IO/PLY/vtkPLYReader.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/IO/PLY/vtkPLYWriter.cxx
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/IO/PLY/vtkPLY.h
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/IO/PLY/vtkPLYReader.h
+/work/project/pcl-android/build/CMakeExternals/Source/vtk/IO/PLY/vtkPLYWriter.h
+/work/project/pcl-android/build/CMakeExternals/Build/vtk-host/IO/PLY/vtkIOPLYModule.h
