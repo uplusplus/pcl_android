@@ -1,0 +1,36 @@
+diff --git a/boost_1_45_0/boost/config/stdlib/libstdcpp3.hpp b/boost_1_45_0/boost/config/stdlib/libstdcpp3.hpp
+index 01dd490..28d4b5b 100644
+--- a/boost_1_45_0/boost/config/stdlib/libstdcpp3.hpp
++++ b/boost_1_45_0/boost/config/stdlib/libstdcpp3.hpp
+@@ -23,7 +23,7 @@
+ #endif
+ 
+ #if defined(__osf__) && !defined(_REENTRANT) \
+-  && ( defined(_GLIBCXX_HAVE_GTHR_DEFAULT) || defined(_GLIBCPP_HAVE_GTHR_DEFAULT) )
++  && ( defined(_GLIBCXX_HAVE_GTHR_DEFAULT) || defined(_GLIBCPP_HAVE_GTHR_DEFAULT) || defined(_GLIBCXX_HAS_GTHREADS))
+ // GCC 3 on Tru64 forces the definition of _REENTRANT when any std lib header
+ // file is included, therefore for consistency we define it here as well.
+ #  define _REENTRANT
+@@ -31,6 +31,7 @@
+ 
+ #ifdef __GLIBCXX__ // gcc 3.4 and greater:
+ #  if defined(_GLIBCXX_HAVE_GTHR_DEFAULT) \
++	|| defined(_GLIBCXX_HAS_GTHREADS) \
+         || defined(_GLIBCXX__PTHREADS)
+       //
+       // If the std lib has thread support turned on, then turn it on in Boost
+@@ -43,12 +44,13 @@
+ #  endif
+ #elif defined(__GLIBCPP__) \
+         && !defined(_GLIBCPP_HAVE_GTHR_DEFAULT) \
++	&& !defined(_GLIBCXX_HAS_GTHREADS) \
+         && !defined(_GLIBCPP__PTHREADS)
+    // disable thread support if the std lib was built single threaded:
+ #  define BOOST_DISABLE_THREADS
+ #endif
+ 
+-#if (defined(linux) || defined(__linux) || defined(__linux__)) && defined(__arm__) && defined(_GLIBCPP_HAVE_GTHR_DEFAULT)
++#if (defined(linux) || defined(__linux) || defined(__linux__)) && defined(__arm__) && (defined(_GLIBCPP_HAVE_GTHR_DEFAULT) || defined(_GLIBCXX_HAS_GTHREADS))
+ // linux on arm apparently doesn't define _REENTRANT
+ // so just turn on threading support whenever the std lib is thread safe:
+ #  define BOOST_HAS_THREADS
